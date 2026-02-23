@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Debabhumi Medical Store & Diagnostic Lab — Aska. Blood tests, health checkups, medicines. Open 6 AM – 11 PM every day." />
+  <title>Debabhumi Medical Store & Diagnostic Lab | Aska</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header id="navbar" role="banner">
+  <div class="container">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="#home" class="nav-logo" aria-label="Debabhumi Medical Store Home">
+        <div class="logo-icon" aria-hidden="true"><img src="images/medical-symbol.jpg" alt="Medical Symbol"></div>
+        <div class="logo-text">
+          <div class="brand">DEBABHUMI</div>
+          <div class="tagline">Medical Store </div>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#lab-tests">Lab Tests</a></li>
+        <li><a href="#franchise">Our Team</a></li>
+        <li><a href="#doctors">Doctors</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="tel:7205283441" class="nav-cta">📞 Book Test</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ═══════════════════════════════════════════════
+     HERO V3 — Animated Green Medical Hero
+     Two-column: Animated text LEFT + Image RIGHT
+═══════════════════════════════════════════════ -->
+<section id="home" class="hero-v3" aria-label="Hero">
+
+  <!-- BG Layers -->
+  <div class="v3-bg-system" aria-hidden="true">
+    <div class="v3-base-color"></div>
+    <div class="v3-mesh-wrap">
+      <div class="v3-aurora v3-aurora-1"></div>
+      <div class="v3-aurora v3-aurora-2"></div>
+      <div class="v3-aurora v3-aurora-3"></div>
+    </div>
+    <div class="v3-cross-pattern"></div>
+    <div class="v3-ambient-particles" id="v3AmbientParticles"></div>
+  </div>
+
+  <!-- Capsule Animation Layer -->
+  <div class="v3-animation-layer" aria-hidden="true">
+    <div class="v3-capsule-container">
+      <svg class="v3-capsule-svg" viewBox="0 0 200 400">
+        <defs>
+          <linearGradient id="capGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#1a9e72" stop-opacity="0.85" />
+            <stop offset="100%" stop-color="#00b4a0" stop-opacity="0.85" />
+          </linearGradient>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+            <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+        <circle id="capCore" cx="100" cy="200" r="40" fill="#ffffff" filter="url(#glow)" opacity="0"/>
+        <circle id="capRipple" cx="100" cy="200" r="40" fill="none" stroke="#5ED3A1" stroke-width="4" opacity="0"/>
+        <g id="capTop">
+          <path d="M50,200 L50,100 A50,50 0 0,1 150,100 L150,200 Z" fill="url(#capGrad)" stroke="#ffffff" stroke-width="2" opacity="0.92"/>
+          <rect x="65" y="110" width="10" height="40" rx="5" fill="#ffffff" opacity="0.4"/>
+        </g>
+        <g id="capBottom">
+          <path d="M50,200 L150,200 L150,300 A50,50 0 0,1 50,300 Z" fill="rgba(255,255,255,0.4)" stroke="#ffffff" stroke-width="2" opacity="0.92"/>
+        </g>
+      </svg>
+    </div>
+    <div class="v3-scatter-particles" id="v3Scatter"></div>
+
+    <!-- Floating SVG elements -->
+    <div class="v3-floats">
+      <svg class="v3-float v3-f-dna" viewBox="0 0 60 160">
+        <path d="M10,10 Q40,40 10,70 Q40,100 10,130 Q40,160 10,190" fill="none" stroke="#1a9e72" stroke-width="2.5" opacity="0.6"/>
+        <path d="M50,10 Q20,40 50,70 Q20,100 50,130 Q20,160 50,190" fill="none" stroke="#00b4a0" stroke-width="2.5" opacity="0.6"/>
+        <line x1="10" y1="40" x2="50" y2="40" stroke="#1a9e72" stroke-width="1.5" opacity="0.3"/>
+        <line x1="10" y1="70" x2="50" y2="70" stroke="#00b4a0" stroke-width="1.5" opacity="0.3"/>
+        <line x1="10" y1="100" x2="50" y2="100" stroke="#1a9e72" stroke-width="1.5" opacity="0.3"/>
+        <line x1="10" y1="130" x2="50" y2="130" stroke="#00b4a0" stroke-width="1.5" opacity="0.3"/>
+      </svg>
+      <svg class="v3-float v3-f-ecg" viewBox="0 0 200 80">
+        <path d="M0,40 L40,40 L55,10 L75,70 L95,20 L110,40 L200,40" fill="none" stroke="#1a9e72" stroke-width="2.5" stroke-linecap="round" filter="drop-shadow(0 0 6px rgba(26,158,114,0.5))"/>
+      </svg>
+      <div class="v3-float v3-f-cross glass-icon"><span>+</span></div>
+      <div class="v3-float v3-f-shield glass-icon"><span>🛡️</span></div>
+      <svg class="v3-float v3-f-hex" viewBox="0 0 52 60">
+        <polygon points="26,2 50,15 50,45 26,58 2,45 2,15" fill="none" stroke="#1a9e72" stroke-width="1.8" opacity="0.3"/>
+      </svg>
+      <svg class="v3-float v3-f-pill" viewBox="0 0 72 28">
+        <rect x="1" y="1" width="70" height="26" rx="13" fill="none" stroke="#00b4a0" stroke-width="1.6" opacity="0.3"/>
+        <rect x="1" y="1" width="35" height="26" rx="13" fill="#c8f0e0" opacity="0.2"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- TWO-COLUMN CONTENT -->
+  <div class="v3-container container">
+
+    <!-- LEFT: Text -->
+    <div class="v3-left">
+      <div class="v3-badge" id="v3Badge">
+        <span class="v3-bdot"></span>
+        <span>Trusted Since 2010 · Aska, Odisha</span>
+      </div>
+
+      <h1 class="v3-heading" id="v3Heading">
+        Your Trusted <span class="v3-h-green">Medical Store</span> <span class="v3-h-amp">&amp;</span> Diagnostic Lab
+      </h1>
+
+      <p class="v3-subtitle" id="v3Subtitle">
+        Quality Medicines.&ensp;Accurate Testing.&ensp;Professional Care.
+      </p>
+
+      <div class="v3-timing" id="v3Timing">
+        <span class="v3-tdot"></span>
+        Open Every Day &nbsp;<strong>6:00 AM – 11:00 PM</strong>
+      </div>
+
+      <div class="v3-ctas" id="v3Ctas">
+        <a href="#lab-tests" class="v3-btn-primary" data-magnetic>
+          <span>Explore Services</span> <span>→</span>
+        </a>
+        <a href="#contact" class="v3-btn-outline" data-magnetic>
+          Contact Us
+        </a>
+      </div>
+
+      <p class="v3-disclaimer" id="v3Disclaimer">
+        ⚕&nbsp; We do not sell medicines online. This is an informational website only.
+      </p>
+    </div>
+
+    <!-- RIGHT: Image + Stats -->
+    <div class="v3-right" id="v3Right">
+      <div class="v3-img-panel">
+        <img src="images/img6.jpg" alt="Debabhumi Medical Store & General Diagnostics signage, Aska" />
+      </div>
+      <div class="v3-stats" id="v3Stats">
+        <div class="v3-stat">
+          <div class="v3-stat-icon">🩸</div>
+          <div class="v3-stat-num">300<sup>+</sup></div>
+          <div class="v3-stat-lbl">Lab Tests</div>
+        </div>
+        <div class="v3-stat">
+          <div class="v3-stat-icon">🏆</div>
+          <div class="v3-stat-num">16<sup>+</sup></div>
+          <div class="v3-stat-lbl">Years Service</div>
+        </div>
+        <div class="v3-stat">
+          <div class="v3-stat-icon">👨‍👩‍👧</div>
+          <div class="v3-stat-num">50K<sup>+</sup></div>
+          <div class="v3-stat-lbl">Happy Patients</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" aria-labelledby="about-title">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual" aria-hidden="true">
+        <div class="about-img-wrap">
+          <img src="images/img1.jpg" alt="Inside Debabhumi Medical Store and Diagnostic Lab, Aska" style="width:100%;height:100%;object-fit:cover;" />
+        </div>
+        <div class="about-badge"><div class="yrs">14+</div><div class="yrs-lbl">Years of<br>Service</div></div>
+      </div>
+      <div class="about-text">
+        <span class="tag-line">About Us</span>
+        <h2 class="section-title" id="about-title">Complete Healthcare at<br>Banibihar Main Road, Aska</h2>
+        <p style="color:var(--grey);margin-bottom:18px;"><strong>Debabhumi Medical Store &amp; General Diagnostic Lab</strong> is your neighbourhood healthcare destination on Banibihar Main Road, Aska. We combine a fully-stocked medicine store with a state-of-the-art diagnostic laboratory to provide holistic healthcare services to every family.</p>
+        <p style="color:var(--grey);margin-bottom:28px;">Our lab is equipped with modern automated analysers ensuring <strong>fast &amp; accurate reports</strong>. From routine blood tests to specialised hormone panels, all types of blood tests are available at affordable prices. Certified technicians handle every sample with precision, and reports are delivered same-day for most tests.</p>
+        <div class="about-features">
+          <div class="feature-chip"><span class="icon">🔬</span> Modern Lab Equipment</div>
+          <div class="feature-chip"><span class="icon">⚡</span> Fast Turnaround Reports</div>
+          <div class="feature-chip"><span class="icon">💊</span> All Medicines Available</div>
+          <div class="feature-chip"><span class="icon">📋</span> Certified Technicians</div>
+          <div class="feature-chip"><span class="icon">💰</span> Affordable Pricing</div>
+          <div class="feature-chip"><span class="icon">🏠</span> Home Sample Collection</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- LAB TESTS -->
+<section id="lab-tests" aria-labelledby="lab-title">
+  <div class="container">
+    <span class="tag-line">Lab Services</span>
+    <h2 class="section-title" id="lab-title">Comprehensive Blood Tests &amp; Health Packages</h2>
+    <p class="section-subtitle">All common blood tests available with same-day report delivery. Walk-in or book in advance — no appointment needed for most tests.</p>
+    <div class="services-grid" role="list">
+      <div class="service-card" role="listitem"><div class="svc-icon">🩸</div><h3>CBC (Complete Blood Count)</h3><p>Comprehensive blood cell analysis</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">🍬</div><h3>Blood Sugar Test</h3><p>Fasting, PP &amp; Random glucose</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">🦋</div><h3>Thyroid Profile</h3><p>T3, T4 &amp; TSH levels</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">🫀</div><h3>Lipid Profile</h3><p>Cholesterol &amp; triglyceride panel</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">🫁</div><h3>Liver Function Test</h3><p>Complete hepatic function analysis</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">🫘</div><h3>Kidney Function Test</h3><p>Creatinine, urea &amp; eGFR</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">☀️</div><h3>Vitamin D Test</h3><p>25-hydroxy Vitamin D levels</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">💊</div><h3>Vitamin B12 Test</h3><p>Cobalamin deficiency screening</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">📊</div><h3>HbA1c</h3><p>3-month average blood sugar</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">🦟</div><h3>Dengue Test</h3><p>NS1 Antigen &amp; Antibody IgG/IgM</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">🦠</div><h3>Malaria Test</h3><p>Rapid antigen &amp; slide test</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">😷</div><h3>COVID Test</h3><p>RT-PCR &amp; Rapid Antigen</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">⚗️</div><h3>Hormone Tests</h3><p>FSH, LH, Prolactin, Testosterone</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">🌾</div><h3>Allergy Test</h3><p>IgE panel — food &amp; environment</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">🏥</div><h3>Full Body Checkup</h3><p>60+ parameters in one package</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">🔩</div><h3>Iron Studies</h3><p>Serum Iron, TIBC &amp; Ferritin</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">🧬</div><h3>CRP Test</h3><p>C-Reactive Protein — inflammation</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">🩺</div><h3>ESR Test</h3><p>Erythrocyte sedimentation rate</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">🔬</div><h3>Urine Routine</h3><p>Complete urine examination</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">❤️</div><h3>Cardiac Risk Profile</h3><p>Troponin, LDH &amp; CPKMB</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">🧪</div><h3>Typhoid (Widal)</h3><p>Salmonella antibody test</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">🩻</div><h3>HbsAg (Hepatitis B)</h3><p>Surface antigen screening</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">🔍</div><h3>Hepatitis C (Anti-HCV)</h3><p>Hepatitis C antibody detection</p></div>
+      <div class="service-card" role="listitem"><div class="svc-icon">🧫</div><h3>Uric Acid Test</h3><p>Gout &amp; kidney stone screening</p></div>
+    </div>
+
+    <div class="franchise-partner-banner">
+      <div class="franchise-partner-img-wrap">
+        <img src="images/img5.jpg" alt="General Diagnostic — Our Franchise Partner" class="franchise-partner-img" />
+      </div>
+      <div class="franchise-partner-text">
+        <span class="tag-line" style="margin-bottom:10px;">Our Franchise Partner</span>
+        <h3>General Diagnostic</h3>
+        <p style="color:var(--grey);line-height:1.8;">Debabhumi Medical Store &amp; our Lab is proudly associated with <strong>General Diagnostic</strong> — a trusted name in pathology and clinical diagnostics. This partnership ensures access to advanced testing technology, stringent quality controls, and reliable same-day reports for every patient in Aska.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- CONSULTING DOCTORS -->
+<section id="doctors" aria-labelledby="doctors-title" style="background:var(--off-white);">
+  <div class="container">
+    <span class="tag-line">Associated Specialists</span>
+    <h2 class="section-title" id="doctors-title">Our Consulting Doctors</h2>
+    <p class="section-subtitle">Expert specialist doctors visit Debabhumi Medical Store on a scheduled basis — bringing quality specialist care directly to Aska.</p>
+    <div class="doctors-grid">
+      <article class="doctor-card"><div class="doctor-color-bar" style="background:#22c55e;"></div><div class="doctor-body"><div class="doctor-specialty" style="color:#22c55e;">🟢 Dermatology</div><h3 class="doctor-name">Dr. Nitin Ranasingh</h3><div class="doctor-qual">MBBS, MD (Skin &amp; VD)</div><div class="doctor-role">Skin Specialist &amp; Dermatologist</div><div class="doctor-schedule"><div class="sched-row">📅 <span>Every Sunday</span></div><div class="sched-row">⏰ <span>3:00 PM – 5:00 PM</span></div></div></div></article>
+      <article class="doctor-card"><div class="doctor-color-bar" style="background:#eab308;"></div><div class="doctor-body"><div class="doctor-specialty" style="color:#ca8a04;">🟡 Gynecology</div><h3 class="doctor-name">Dr. Mohan Barik</h3><div class="doctor-qual">MD (O&amp;G)</div><div class="doctor-role">Gynec Specialist</div><div class="doctor-schedule"><div class="sched-row">📅 <span>Every Monday &amp; Friday</span></div><div class="sched-row">⏰ <span>11:00 AM – 2:00 PM</span></div></div></div></article>
+      <article class="doctor-card"><div class="doctor-color-bar" style="background:#f97316;"></div><div class="doctor-body"><div class="doctor-specialty" style="color:#ea580c;">🟠 Diabetes &amp; Medicine</div><h3 class="doctor-name">Dr. Sunakar Sethi</h3><div class="doctor-qual">MBBS, MD</div><div class="doctor-role">Senior Medicine Specialist &amp; Diabetologist</div><div class="doctor-schedule"><div class="sched-row">📅 <span>2nd &amp; 4th Thursday of Every Month</span></div><div class="sched-row">⏰ <span>11:00 AM – 3:00 PM</span></div></div></div></article>
+      <article class="doctor-card"><div class="doctor-color-bar" style="background:#3b82f6;"></div><div class="doctor-body"><div class="doctor-specialty" style="color:#2563eb;">🔵 Cardio / Medicine</div><h3 class="doctor-name">Dr. Sandeep Kumar Ratha</h3><div class="doctor-qual">MBBS, MD (Medicine) – <span style="color:var(--green);font-weight:700;">Gold Medalist</span></div><div class="doctor-role">Cardiology, Diabetology, Thyroid, Asthma &amp; COPD</div><div class="doctor-schedule"><div class="sched-row">📅 <span>1st &amp; 3rd Sunday of Every Month</span></div><div class="sched-row">⏰ <span>2:00 PM – 5:00 PM</span></div></div></div></article>
+      <article class="doctor-card"><div class="doctor-color-bar" style="background:#a855f7;"></div><div class="doctor-body"><div class="doctor-specialty" style="color:#9333ea;">🟣 ENT</div><h3 class="doctor-name">Dr. Priyajeet Panigrahy</h3><div class="doctor-qual">MBBS, DNB (ENT), MNAMS</div><div class="doctor-role">ENT Specialist &amp; Endoscopist</div><div class="doctor-schedule"><div class="sched-row">📅 <span>Every Saturday</span></div><div class="sched-row">⏰ <span>2:00 PM – 3:00 PM</span></div></div></div></article>
+      <article class="doctor-card"><div class="doctor-color-bar" style="background:#0ea5e9;"></div><div class="doctor-body"><div class="doctor-specialty" style="color:#0284c7;">🔷 Orthopaedics</div><h3 class="doctor-name">Dr. Dillip Kumar Pradhan</h3><div class="doctor-qual">MBBS, MS (Orthopaedics)</div><div class="doctor-role">Trauma, Joint Replacement &amp; Reconstruction Surgeon</div><div class="doctor-schedule"><div class="sched-row">📅 <span>Every Saturday</span></div><div class="sched-row">⏰ <span>Morning: 8:30 AM – 10:00 AM</span></div><div class="sched-row">⏰ <span>Evening: 5:30 PM – 7:00 PM</span></div></div></div></article>
+      <article class="doctor-card"><div class="doctor-color-bar" style="background:#ef4444;"></div><div class="doctor-body"><div class="doctor-specialty" style="color:#dc2626;">🔴 General Surgery</div><h3 class="doctor-name">Dr. Sameer Kumar Panigrahy</h3><div class="doctor-qual">MBBS, MD (General Surgery)<br>M.Ch (Cardio Thoracic &amp; Vascular Surgery)</div><div class="doctor-role">General &amp; Cardiothoracic Surgeon</div><div class="doctor-schedule"><div class="sched-row">📅 <span>Every Wednesday</span></div><div class="sched-row">⏰ <span>9:00 AM – 10:00 AM</span></div><div class="sched-row">⏰ <span>3:00 PM (Afternoon)</span></div></div></div></article>
+      <article class="doctor-card"><div class="doctor-color-bar" style="background:#ef4444;"></div><div class="doctor-body"><div class="doctor-specialty" style="color:#dc2626;">🔴 Senior Surgeon Specialist</div><h3 class="doctor-name">Dr. B.B. Ghadei</h3><div class="doctor-qual">MBBS, MD</div><div class="doctor-role">Senior Surgeon Specialist</div><div class="doctor-schedule"><div class="sched-row">📅 <span>Once a Month</span></div><div class="sched-row">🏫 <span>Schedule announced in-store</span></div></div></div></article>
+    </div>
+  </div>
+</section>
+
+
+<!-- TIMING -->
+<section id="timing" aria-labelledby="timing-title">
+  <div class="container">
+    <span class="tag-line">We're Here for You</span>
+    <h2 class="section-title" id="timing-title">Shop &amp; Lab Timings</h2>
+    <div class="timing-display" role="group" aria-label="Operating hours">
+      <div class="timing-block"><div class="t-icon">📅</div><div class="t-label">Days Open</div><div class="t-value">Open Every Day</div></div>
+      <div class="timing-divider" aria-hidden="true">|</div>
+      <div class="timing-block"><div class="t-icon">🌅</div><div class="t-label">Opening Time</div><div class="t-value">6:00 AM</div></div>
+      <div class="timing-divider" aria-hidden="true">—</div>
+      <div class="timing-block"><div class="t-icon">🌙</div><div class="t-label">Closing Time</div><div class="t-value">11:00 PM</div></div>
+    </div>
+    <p style="margin-top:30px;opacity:.75;font-size:.9rem;">📞 For early morning home sample collection, call <a href="tel:7205283441" style="color:#fff;font-weight:700;text-decoration:underline;">72052 83441</a></p>
+  </div>
+</section>
+
+
+<!-- MAP -->
+<section id="map-section" aria-labelledby="map-title">
+  <div class="container">
+    <span class="tag-line">Find Us</span>
+    <h2 class="section-title" id="map-title">Our Location</h2>
+    <p class="section-subtitle">Conveniently located on Banibihar Main Road, Aska — easily accessible from all parts of the town.</p>
+    <div class="map-wrapper">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.2!2d84.6694!3d19.6094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3c6d4c5f000001%3A0x7890abcdef123456!2sAska%2C%20Odisha!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Debabhumi Medical Store location map" aria-label="Google Map showing location of Debabhumi Medical Store"></iframe>
+      <div class="map-overlay">
+        <h4>📍 Debabhumi Medical Store</h4>
+        <p>Banibihar Main Road, Aska,<br>Ganjam District, Odisha</p>
+        <a href="https://share.google/fxEcPSL6zsHQjK2ms" target="_blank" rel="noopener noreferrer" class="btn-directions" aria-label="Get directions">🧭 Get Directions</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- TEAM / FRANCHISE OWNERS -->
+<section id="franchise" aria-labelledby="franchise-title">
+  <div class="container">
+    <span class="tag-line">Our Team</span>
+    <h2 class="section-title" id="franchise-title">Meet the Franchise Owners</h2>
+    <p class="section-subtitle">Dedicated healthcare professionals committed to serving the community of Aska with integrity, care, and expertise.</p>
+    <div class="owners-grid">
+      <article class="owner-card" aria-label="Franchise Owner Priyabrata Misra">
+        <img src="images/img2.jpg" alt="Mr. Priyabrata Misra" class="owner-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+        <div class="owner-img-placeholder" style="display:none;" aria-hidden="true">👨‍⚕️</div>
+        <div class="owner-info">
+          <span class="owner-role">Franchise Owner</span>
+          <h3>Mr. Priyabrata Misra</h3>
+          <p>A dedicated and experienced medicine store owner with over 14 years of experience in the pharmaceutical retail industry. Committed to high-quality medicines, healthcare products, and reliable customer service.</p>
+        </div>
+      </article>
+
+      <article class="owner-card" aria-label="Franchise Manager Amrit Kumar Misra">
+        <img src="images/img3.jpg" alt="Mr. Amrit Kumar Misra" class="owner-img" style="object-position:center 25%;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+        <div class="owner-img-placeholder" style="display:none;" aria-hidden="true">👨‍⚕️</div>
+        <div class="owner-info">
+          <span class="owner-role">Franchise Manager</span>
+          <h3>Mr. Amrit Kumar Misra</h3>
+          <p>Co-founder and driving force behind Debabhumi Medical Store. Passionate about community health, ensuring every customer receives the right medicines, guidance, and care.</p>
+        </div>
+      </article>
+
+      <article class="owner-card" aria-label="Website Developer Abhisekh Misra">
+        <img src="images/img4.jpg" alt="Abhisekh Misra — Website Developer" class="owner-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+        <div class="owner-img-placeholder" style="display:none;" aria-hidden="true">💻</div>
+        <div class="owner-info">
+          <span class="owner-role">Website Developer</span>
+          <h3>Abhisekh Misra</h3>
+          <p>Designed and developed the official Debabhumi Medical Store &amp; Diagnostic Lab website. Passionate about building clean, user-friendly digital experiences for local businesses.</p>
+          <p style="margin-top:10px;font-size:.88rem;">📞 <a href="tel:+918342091308" style="color:var(--green);font-weight:600;">+91 83420 91308</a></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <span class="tag-line">Contact Us</span>
+    <h2 class="section-title" id="contact-title">Get in Touch</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>We're Always Here to Help</h3>
+        <div class="info-item"><div class="info-icon" aria-hidden="true">📞</div><div class="info-text"><div class="lbl">Phone Numbers</div><p><a href="tel:9437262716">94372 62716</a><br><a href="tel:8249132994">82491 32994</a></p></div></div>
+        <div class="info-item"><div class="info-icon" aria-hidden="true">🧪</div><div class="info-text"><div class="lbl">Book a Blood Test</div><p><a href="tel:7205283441">72052 83441</a></p></div></div>
+<div class="info-item">
+  <div class="info-icon" aria-hidden="true">📧</div>
+  <div class="info-text">
+    <div class="lbl">Email</div>
+    <p>
+      <a href="mailto:debabhumimedicals@gmail.com">
+        debabhumimedicals@gmail.com
+      </a>
+    </p>
+  </div>
+</div>        <div class="info-item"><div class="info-icon" aria-hidden="true">📍</div><div class="info-text"><div class="lbl">Address</div><p>Banibihar Main Road, Aska,<br>Ganjam District, Odisha — 761110</p></div></div>
+        <div class="info-item"><div class="info-icon" aria-hidden="true">🕐</div><div class="info-text"><div class="lbl">Working Hours</div><p>Every Day &nbsp; 6:00 AM – 11:00 PM</p></div></div>
+      </div>
+      <div class="contact-form">
+        <h3>Feedback </h3>
+        <div class="form-group"><label for="name">Your Full Name</label><input type="text" id="name" name="name" placeholder="e.g. Rahul Mohanty" required autocomplete="name" /></div>
+        <div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" placeholder="e.g. 9437262716" required autocomplete="tel" /></div>
+        <div class="form-group"><label for="subject">Subject</label><select id="subject" name="subject"><option value="">Select a subject…</option><option>Book a Blood Test</option><option>Medicine Inquiry</option><option>Report Query</option><option>Home Sample Collection</option><option>General Inquiry</option></select></div>
+        <div class="form-group"><label for="message">Your Message</label><textarea id="message" name="message" placeholder="Tell us how we can help you…" required></textarea></div>
+        <button type="submit" class="btn-submit" onclick="handleSubmit(event)">Send Message ✉️</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" aria-label="Debabhumi Medical Store">
+          <div class="logo-icon" aria-hidden="true"><img src="images/medical-symbol.jpg" alt="Medical Symbol"></div>
+          <div class="logo-text"><div class="brand">DEBABHUMI</div><div class="tagline">Medical &amp; Diagnostic Lab</div></div>
+        </div>
+        <p>Your trusted neighbourhood healthcare destination at Banibihar Main Road, Aska. Providing quality medicines and accurate diagnostic services since 2010.</p>
+        <div class="social-links" aria-label="Social media links">
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="WhatsApp">💬</a>
+          <a href="tel:7205283441" aria-label="Call us">📞</a>
+        </div>
+      </div>
+      <nav class="footer-col" aria-label="Quick links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#lab-tests">Lab Tests</a></li>
+          <li><a href="#franchise">Our Team</a></li>
+          <li><a href="#timing">Store Timing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Services">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#lab-tests">Complete Blood Count</a></li>
+          <li><a href="#lab-tests">Thyroid Profile</a></li>
+          <li><a href="#lab-tests">Lipid Profile</a></li>
+          <li><a href="#lab-tests">Liver &amp; Kidney Tests</a></li>
+          <li><a href="#lab-tests">Full Body Checkup</a></li>
+          <li><a href="#lab-tests">All Blood Tests</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Debabhumi Medical Store &amp; Diagnostic Lab. All rights reserved.</p>
+      <p>📍 Banibihar Main Road, Aska, Odisha &nbsp;|&nbsp; <a href="tel:9437262716" style="color:var(--green-lt);">94372 62716</a></p>
+    </div>
+  </div>
+</footer>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script>
+gsap.registerPlugin(ScrollTrigger);
+
+window.addEventListener('DOMContentLoaded', () => {
+
+  /* ─── HERO V3: CAPSULE BURST → TWO-COLUMN REVEAL ─── */
+
+  // Generate ambient background particles
+  const ambientContainer = document.getElementById('v3AmbientParticles');
+  for (let i = 0; i < 16; i++) {
+    const dot = document.createElement('div');
+    dot.className = 'ambient-dot';
+    const s = Math.random() * 4 + 2;
+    dot.style.width  = s + 'px';
+    dot.style.height = s + 'px';
+    dot.style.left   = Math.random() * 100 + '%';
+    dot.style.top    = Math.random() * 100 + '%';
+    ambientContainer.appendChild(dot);
+  }
+
+  // Generate scatter particles
+  const scatterContainer = document.getElementById('v3Scatter');
+  for (let i = 0; i < 36; i++) {
+    const sd = document.createElement('div');
+    sd.className = 'scatter-dot';
+    scatterContainer.appendChild(sd);
+  }
+
+  // Animate heading as a whole — no char split to avoid word-break misalignment
+  // Initial states — everything hidden
+  gsap.set('.v3-capsule-svg', { rotationY: -30, rotationX: 10, scale: 0.8 });
+  gsap.set('#capTop',         { y: 0 });
+  gsap.set('#capBottom',      { y: 0 });
+  gsap.set('#v3Heading',      { opacity: 0, y: 40 });
+  gsap.set('#v3Badge',        { opacity: 0, y: 18 });
+  gsap.set('#v3Subtitle',     { opacity: 0, filter: 'blur(10px)', y: 16 });
+  gsap.set('#v3Timing',       { opacity: 0, x: -20 });
+  gsap.set('#v3Ctas',         { opacity: 0, y: 16 });
+  gsap.set('#v3Disclaimer',   { opacity: 0 });
+  gsap.set('#v3Right',        { opacity: 0, x: 60 });
+  gsap.set('#v3Stats',        { opacity: 0, y: 16 });
+  gsap.set('.v3-float',       { opacity: 0, scale: 0.7 });
+
+  const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+
+  // 1. Capsule enters
+  tl.to('.v3-capsule-svg', { rotationY: 0, rotationX: 0, scale: 1, duration: 1.4, ease: 'back.out(1.2)' })
+  // 2. Capsule opens
+    .to('#capTop',    { y: -90, duration: 1.0, ease: 'power2.inOut' }, '-=0.4')
+    .to('#capBottom', { y:  90, duration: 1.0, ease: 'power2.inOut' }, '<')
+    .to('#capCore',   { opacity: 1, r: 90, duration: 1.0 }, '<')
+    .to('#capRipple', { opacity: 0.9, scale: 4.5, duration: 1.0, ease: 'power2.out' }, '-=0.2')
+    .to('#capRipple', { opacity: 0, duration: 0.5 }, '-=0.5')
+  // 3. Scatter burst
+    .to('.scatter-dot', {
+      x: () => (Math.random() - 0.5) * window.innerWidth * 1.2,
+      y: () => (Math.random() - 0.5) * window.innerHeight * 1.1,
+      scale: () => Math.random() * 2.5 + 0.5,
+      opacity: () => Math.random() * 0.9 + 0.1,
+      duration: 1.4, ease: 'power4.out', stagger: 0.008
+    }, '-=0.9')
+  // 4. Capsule & scatter fade out
+    .to(['.v3-capsule-container', '.scatter-dot'], { opacity: 0, duration: 0.7 }, '-=0.6')
+  // 5. Reveal LEFT content
+    .to('#v3Badge',      { opacity: 1, y: 0, duration: 0.6, ease: 'back.out(1.5)' }, '-=0.5')
+    .to('#v3Heading',    { opacity: 1, y: 0, duration: 0.8, ease: 'power2.out' }, '-=0.3')
+    .to('#v3Subtitle',   { opacity: 1, filter: 'blur(0)', y: 0, duration: 0.9 }, '-=0.5')
+    .to('#v3Timing',     { opacity: 1, x: 0, duration: 0.6 }, '-=0.5')
+    .to('#v3Ctas',       { opacity: 1, y: 0, duration: 0.6, ease: 'back.out(1.2)' }, '-=0.4')
+    .to('#v3Disclaimer', { opacity: 1, duration: 0.5 }, '-=0.2')
+  // 6. Reveal RIGHT panel
+    .to('#v3Right',   { opacity: 1, x: 0, duration: 1.0, ease: 'power2.out' }, '-=1.2')
+    .to('#v3Stats',   { opacity: 1, y: 0, duration: 0.7, ease: 'back.out(1.3)' }, '-=0.5')
+  // 7. Float decorations appear
+    .to('.v3-float',  {
+      opacity: 1, scale: 1,
+      y: () => (Math.random() - 0.5) * 30,
+      duration: 1.4, ease: 'elastic.out(1, 0.5)',
+      stagger: 0.1,
+      onComplete: startContinuousMotion
+    }, '-=1.4');
+
+  function startContinuousMotion() {
+    // Ambient particles drift
+    gsap.to('.ambient-dot', {
+      y: 'random(-80, -20)', x: 'random(-40, 40)',
+      opacity: 'random(0.05, 0.5)',
+      duration: 'random(4, 8)',
+      repeat: -1, yoyo: true, ease: 'sine.inOut',
+      stagger: { amount: 5, from: 'random' }
+    });
+
+    // Aurora breathing
+    gsap.to('.v3-aurora-1', { x: 55, y: 35, duration: 9, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+    gsap.to('.v3-aurora-2', { x: -65, y: -45, duration: 11, repeat: -1, yoyo: true, ease: 'sine.inOut', delay: 1 });
+    gsap.to('.v3-aurora-3', { scale: 1.25, x: 35, duration: 10, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+
+    // Float elements bob
+    document.querySelectorAll('.v3-float').forEach((el, i) => {
+      gsap.to(el, {
+        y: i % 2 === 0 ? -18 : 18,
+        rotation: i % 2 === 0 ? 6 : -6,
+        duration: 3.5 + i * 0.5,
+        repeat: -1, yoyo: true, ease: 'sine.inOut'
+      });
+    });
+
+    // Subtle hero scale breathe
+    gsap.to('.hero-v3', { scale: 1.008, duration: 6, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+
+    // Heading glow pulse
+    gsap.to('#v3Heading', {
+      textShadow: '0 0 20px rgba(26,158,114,0.28)',
+      duration: 4, repeat: -1, yoyo: true, ease: 'sine.inOut'
+    });
+  }
+
+  // Mouse parallax
+  const hero = document.querySelector('.hero-v3');
+  hero.addEventListener('mousemove', e => {
+    const cx = window.innerWidth  / 2;
+    const cy = window.innerHeight / 2;
+    const dx = (e.clientX - cx) / cx;
+    const dy = (e.clientY - cy) / cy;
+    gsap.to('.v3-mesh-wrap', { x: dx * -28, y: dy * -22, duration: 1.2, ease: 'power2.out' });
+    gsap.to('.v3-floats',    { x: dx *  20, y: dy *  14, duration: 1.4, ease: 'power2.out' });
+    gsap.to('.v3-left',      { x: dx *   7, y: dy *   5, duration: 1.6, ease: 'power1.out' });
+    gsap.to('#v3Right',      { x: dx *  -8, y: dy *  -6, duration: 1.4, ease: 'power2.out' });
+  });
+  hero.addEventListener('mouseleave', () => {
+    gsap.to(['.v3-mesh-wrap', '.v3-floats', '.v3-left', '#v3Right'], { x: 0, y: 0, duration: 1.2, ease: 'power2.out' });
+  });
+
+  // Scroll compress
+  gsap.to('.hero-v3', {
+    scale: 0.94, opacity: 0.3,
+    scrollTrigger: { trigger: '.hero-v3', start: 'top top', end: '75% top', scrub: 1.5 }
+  });
+
+  // Magnetic buttons
+  document.querySelectorAll('[data-magnetic]').forEach(btn => {
+    btn.addEventListener('mousemove', e => {
+      const r = btn.getBoundingClientRect();
+      gsap.to(btn, { x: (e.clientX - r.left - r.width/2) * 0.3, y: (e.clientY - r.top - r.height/2) * 0.3, duration: 0.3, ease: 'power2.out' });
+    });
+    btn.addEventListener('mouseleave', () => gsap.to(btn, { x: 0, y: 0, duration: 0.7, ease: 'elastic.out(1, 0.5)' }));
+  });
+
+
+  /* ─── NAVBAR: active links + scroll shadow ─── */
+  const sections = document.querySelectorAll('section[id]');
+  const navAs    = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let cur = '';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) cur = s.id; });
+    navAs.forEach(a => {
+      a.style.color = ''; a.style.background = '';
+      if (a.getAttribute('href') === '#' + cur) { a.style.color = 'var(--green)'; a.style.background = 'var(--grey-lt)'; }
+    });
+    document.getElementById('navbar').style.boxShadow = window.scrollY > 10
+      ? '0 4px 24px rgba(26,158,114,.16)' : '0 2px 10px rgba(26,158,114,.10)';
+  }, { passive: true });
+
+  /* ─── HAMBURGER ─── */
+  const hbg = document.getElementById('hamburger');
+  const nl  = document.getElementById('navLinks');
+  hbg.addEventListener('click', () => {
+    const open = nl.classList.toggle('open');
+    hbg.classList.toggle('open');
+    hbg.setAttribute('aria-expanded', open);
+  });
+  nl.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nl.classList.remove('open'); hbg.classList.remove('open'); hbg.setAttribute('aria-expanded', 'false');
+  }));
+
+  /* ─── SCROLL REVEAL for cards ─── */
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'translateY(0)'; obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.service-card,.owner-card,.feature-chip,.info-item,.timing-block,.doctor-card').forEach(el => {
+    el.style.opacity = '0'; el.style.transform = 'translateY(28px)'; el.style.transition = 'opacity .55s ease, transform .55s ease';
+    obs.observe(el);
+  });
+});
+
+function handleSubmit(e) {
+  e.preventDefault();
+  const n = document.getElementById('name').value.trim();
+  const p = document.getElementById('phone').value.trim();
+  if (!n || !p) { alert('Please fill in your name and phone number.'); return; }
+    alert(`✅ Thank you, ${n}!
+
+Your message has been received.
+We will call you back on ${p} shortly.
+
+— Debabhumi Medical Store`);
+  ['name','phone','message','subject'].forEach(id => document.getElementById(id).value = '');
+}
+</script>
+</body>
+</html>
